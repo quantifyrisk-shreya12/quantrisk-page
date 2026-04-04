@@ -3,7 +3,9 @@ import Header from './components/Header';
 import WeavingIntelligence from './components/WeavingIntelligence';
 import Expertise from './components/Expertise';
 import FeaturedProjects from './components/FeaturedProjects';
-import LatestArticles from './components/LatestArticles';
+import ExperienceSection from './components/ExperienceSection';
+import EducationSection from './components/EducationSection';
+import CertificatesSection from './components/CertificatesSection';
 import ProjectsPage from './components/ProjectsPage';
 import ProjectDetailPage from './components/ProjectDetailPage';
 import { Project, projectsData } from './components/ProjectData';
@@ -18,13 +20,16 @@ type Route = {
 const App: React.FC = () => {
   const [route, setRoute] = useState<Route>({ page: 'home' });
 
-  const navigateTo = (page: Route['page'], projectId?: number) => {
-    if (page === 'knowledge' || page === 'contact') {
-      // For now, these links will just go to the homepage.
+  const navigateTo = (page: string, projectId?: number) => {
+    if (['experience', 'education', 'certificates'].includes(page)) {
       setRoute({ page: 'home' });
-    } else {
-      setRoute({ page, projectId });
+      setTimeout(() => {
+        const el = document.getElementById(page);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return;
     }
+    setRoute({ page: page as Route['page'], projectId });
     window.scrollTo(0, 0);
   };
 
@@ -51,7 +56,9 @@ const App: React.FC = () => {
                 <WeavingIntelligence navigateTo={navigateTo} />
                 <Expertise />
                 <FeaturedProjects navigateTo={navigateTo} />
-                <LatestArticles />
+                <ExperienceSection />
+                <EducationSection />
+                <CertificatesSection />
               </main>
             </div>
             <FooterNew navigateTo={navigateTo} />

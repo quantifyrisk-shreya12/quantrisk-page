@@ -9,13 +9,21 @@ interface WeavingIntelligenceProps {
 const WeavingIntelligence: React.FC<WeavingIntelligenceProps> = ({ navigateTo }) => {
   return (
     <section className="py-24 text-center">
+      <div className="mb-8 flex justify-center">
+        <img 
+          src="https://picsum.photos/seed/akash/400/400" 
+          alt="Akash - AI/ML Engineer" 
+          className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl"
+          referrerPolicy="no-referrer"
+        />
+      </div>
       <p className="text-lg text-gray-600 mb-4">Welcome to my portfolio</p>
       <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900">
-        <span className="text-gradient">Weaving Intelligence</span> into <br />
-        Digital Solutions
+        <span className="text-gradient">Architecting AI & Data Solutions</span> <br />
+        for Complex Challenges
       </h1>
       <p className="max-w-3xl mx-auto text-lg text-gray-600 mb-10">
-        Welcome to my portfolio. I'm an AI & large language model specialist, transforming complex problems into intelligent, scalable solutions. Explore my projects and articles to see how I leverage cutting-edge technology to build the future.
+        Welcome to my portfolio. I'm Shreya Biswas, a data-driven analyst specializing in Agentic AI, Machine Learning, and Cloud Automation. I am passionate about applying advanced statistical modeling, NLP, and end-to-end data pipelines to solve high-impact business challenges. From predictive analytics and intelligent automation to robust risk modeling, I leverage my technical expertise to drive innovation, learn continuously, and grow alongside a forward-thinking team.
       </p>
       <div className="flex justify-center gap-4 mb-24">
         <button 

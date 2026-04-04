@@ -3,7 +3,6 @@ import Header from './Header';
 import FooterNew from './FooterNew';
 import AboutHero from './AboutHero';
 import WhoIAm from './WhoIAm';
-import TechnicalSkills from './TechnicalSkills';
 import ProfessionalJourney from './ProfessionalJourney';
 import MyApproach from './MyApproach';
 import FloatingActionButton from './FloatingActionButton';
@@ -20,7 +19,6 @@ const AboutPage: React.FC<AboutPageProps> = ({ currentPage, navigateTo }) => {
       <main className="container mx-auto px-6 lg:px-8 py-12">
         <AboutHero />
         <WhoIAm />
-        <TechnicalSkills />
         <ProfessionalJourney />
         <MyApproach />
       </main>

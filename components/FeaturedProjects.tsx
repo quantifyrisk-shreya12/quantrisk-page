@@ -9,8 +9,8 @@ interface FeaturedProjectsProps {
 }
 
 const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ navigateTo }) => {
-  // Take the first 3 projects to feature
-  const featuredProjectsData = projectsData.slice(0, 3);
+  // Take the first 6 projects to feature
+  const featuredProjectsData = projectsData.slice(0, 6);
 
   return (
     <section className="py-20">
