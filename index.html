@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash-AI | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* New text gradient for the light theme */
+      .text-gradient {
+        background: linear-gradient(90deg, #6B46C1, #8A2BE2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      /* New button gradient for the light theme */
+      .button-gradient {
+        background: linear-gradient(90deg, #6B46C1, #8A2BE2);
+      }
+       .button-gradient:hover {
+        background: linear-gradient(90deg, #8A2BE2, #6B46C1);
+      }
+      /* Section title gradient remains the same as it works on light backgrounds */
+       .section-title-gradient {
+        background: linear-gradient(90deg, #5a3c9a, #8242c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#F8F7FF]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
