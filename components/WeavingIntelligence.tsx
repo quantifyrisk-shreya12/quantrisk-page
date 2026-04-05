@@ -11,7 +11,7 @@ const WeavingIntelligence: React.FC<WeavingIntelligenceProps> = ({ navigateTo })
     <section className="py-24 text-center">
       <div className="mb-8 flex justify-center">
         <img 
-          src="https://picsum.photos/seed/akash/400/400" 
+          src="https://raw.githubusercontent.com/quantifyrisk-shreya12/quantrisk-page/main/assets/shreya_foto.jpg" 
           alt="Shreya - Financial Analytics & AI Specialist" 
           className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl"
           referrerPolicy="no-referrer"
