@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRightIcon } from './icons/ArrowRightIcon';
 import { PlusIcon } from './icons/PlusIcon';
+import HeroStats from './HeroStats';
 
 interface WeavingIntelligenceProps {
   navigateTo: (page: string) => void;
@@ -9,30 +10,38 @@ interface WeavingIntelligenceProps {
 const WeavingIntelligence: React.FC<WeavingIntelligenceProps> = ({ navigateTo }) => {
   return (
     <section className="py-24 text-center">
+      {/* Profile photo */}
       <div className="mb-8 flex justify-center">
-        <img 
-          src="https://raw.githubusercontent.com/quantifyrisk-shreya12/quantrisk-page/main/assets/shreya_foto.jpg" 
-          alt="Shreya - Financial Analytics & AI Specialist" 
+        <img
+          src="https://raw.githubusercontent.com/quantifyrisk-shreya12/quantrisk-page/main/assets/shreya_foto.jpg"
+          alt="Shreya - Financial Analytics & AI Specialist"
           className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl"
           referrerPolicy="no-referrer"
         />
       </div>
+
+      {/* Tagline */}
       <p className="text-lg text-gray-600 mb-4">Welcome to my portfolio</p>
-      <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900">
-        <span className="text-gradient">From Financial Risk to Generative AI —</span> <br />
-Building Intelligent Systems That Drive Real Impact
+
+      {/* Hero Headline */}
+      <h1 className="text-5xl md:text-7xl font-extrabold mb-10 text-gray-900">
+        <span className="text-gradient">From Financial Risk to Generative AI —</span>{' '}
+        <br />
+        Building Intelligent Systems That Drive Real Impact
       </h1>
-      <p className="max-w-3xl mx-auto text-lg text-gray-600 mb-10">
-        I'm Shreya Biswas — an AI/ML quantitative analytics consultant with more than 4 years delivering production-grade solutions across financial services, insurance, and energy trading specializing in Agentic AI, Machine Learning, and Cloud Automation. From building fraud detection systems, credit risk PD models at HSBC and Hybrid RAG pipelines at MetLife US, to deploying algorithmic trading systems at RWE and model validation tools at Commerzbank AG — I bridge AI and advanced analytics with real-world business impact. Currently pursuing a second Master's in Quantitative Finance at CAU Kiel, I am passionate about applying advanced statistical modeling, NLP, and end-to-end data pipelines to solve high-impact business challenges. From predictive analytics and intelligent automation to robust risk modeling, I leverage my technical expertise to drive innovation, learn continuously, and grow alongside a forward-thinking team.
-      </p>
+
+      {/* ── HeroStats replaces the old paragraph ── */}
+      <HeroStats />
+
+      {/* CTA Buttons */}
       <div className="flex justify-center gap-4 mb-24">
-        <button 
+        <button
           onClick={() => navigateTo('projects')}
           className="button-gradient text-white font-semibold px-8 py-3 rounded-lg transition-transform hover:scale-105"
         >
           View Projects
         </button>
-        <button 
+        <button
           onClick={() => navigateTo('about')}
           className="group flex items-center gap-2 px-8 py-3 bg-transparent text-gray-800 font-medium rounded-lg border-2 border-gray-300 hover:bg-gray-100 hover:border-gray-400 transition-colors"
         >
@@ -40,6 +49,8 @@ Building Intelligent Systems That Drive Real Impact
           <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
+
+      {/* Divider */}
       <div className="flex items-center justify-center">
         <div className="flex-grow h-px bg-gray-200"></div>
         <PlusIcon className="w-8 h-8 text-gray-400 mx-4" />
