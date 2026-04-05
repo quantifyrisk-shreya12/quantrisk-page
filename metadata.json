@@ -1,5 +1,5 @@
 {
-  "name": "Akash-AI Portfolio",
-  "description": "The portfolio of Akash, an AI/ML Engineer, showcasing projects and expertise in building intelligent systems.",
+  "name": "Shreya Portfolio",
+  "description": "Portfolio of Shreya Biswas — a quantitative analyst and AI/ML professional with 4+ years of experience delivering innovative business solutions across financial services, insurance, and energy trading. Developed production-grade systems including a credit default PD model development, fraud detection systems at HSBC, a Hybrid RAG enterprise document intelligence pipeline at MetLife US, an event-driven algorithmic trading system on Azure at RWE, and a Python-based model identification engine screening 4,000+ records at Commerzbank AG. Currently pursuing second Master's in Quantitative Finance at CAU Kiel, Germany, with focus on mathematical, computational finance and econometrics, statistical modelling, advanced time series analysis. Core expertise spans Agentic AI, machine learning, NLP & Generative AI, cloud automation (Azure, GCP), and end-to-end MLOps pipelines. Actively seeking roles in AI automation, insurance analytics, credit risk modelling, and model validation — where advanced analytics and AI meet real-world financial decision-making.",
   "requestFramePermissions": []
 }

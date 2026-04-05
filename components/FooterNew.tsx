@@ -63,7 +63,7 @@ const FooterNew = React.forwardRef<HTMLElement, FooterNewProps>(({ navigateTo },
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-          <p>&copy; 2025 Akash-AI. All rights reserved.</p>
+          <p>&copy; 2026 Shreya. All rights reserved.</p>
         </div>
       </div>
     </footer>
