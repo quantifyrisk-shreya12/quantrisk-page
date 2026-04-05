@@ -38,9 +38,6 @@ const ProfessionalJourney: React.FC = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
           Professional Journey
         </h2>
-        <p className="max-w-2xl mx-auto text-lg text-gray-600 mt-4">
-          My career path and key milestones in the field of AI and machine learning.
-        </p>
       </div>
       <div className="max-w-4xl mx-auto">
         <div className="relative space-y-12">

@@ -42,7 +42,7 @@ const WhoIAm: React.FC = () => {
         
         <div className="w-full max-w-2xl mx-auto">
             <img 
-                src="https://i.imgur.com/ofGfC3E.png" 
+                src="https://raw.githubusercontent.com/quantifyrisk-shreya12/quantrisk-page/main/assets/personal_word_cloud.png"
                 alt="Portrait of the engineer"
                 className="rounded-2xl shadow-lg w-full object-cover"
             />
