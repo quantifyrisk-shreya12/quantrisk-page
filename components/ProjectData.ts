@@ -17,90 +17,6 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-  id: 1,
-  title: 'Energy Asset Valuation Dashboard',
-  description: 'A comprehensive Streamlit dashboard for energy asset strategy and valuation, featuring real-time market analysis, DCF modeling, Monte Carlo simulations, and portfolio optimization for power generation assets.',
-  longDescription: `This project demonstrates end-to-end capabilities for Asset Strategy & Valuation roles in the energy sector. Built as a comprehensive Streamlit dashboard, it provides real-time analysis of European power generation portfolios.
-
-KEY FEATURES:
-
-Real-time Market Analysis
-- Live electricity price monitoring via ENTSO-E Transparency Platform API
-- Gas and carbon price tracking with volatility analysis
-- Spark spread analysis for gas plant economics
-- Price forecasting with trend and seasonal pattern detection
-
-Asset Performance Analytics
-- Portfolio overview with technology mix and capacity analysis
-- Power plant efficiency, availability, and generation metrics
-- Merit order positioning and dispatch economics
-- Cross-asset benchmarking against portfolio and industry standards
-
-Financial Modeling
-- DCF valuation with NPV and IRR calculations
-- Monte Carlo simulation for risk assessment
-- Sensitivity analysis on key parameters
-- LCOE (Levelized Cost of Energy) calculations
-- Aggregated portfolio valuation metrics
-
-Strategic Planning
-- Market scenario analysis (base case, high/low price, green transition)
-- 7-90 day price predictions
-- Portfolio optimization recommendations
-- Hedging strategy and risk management tools
-
-TECHNICAL ARCHITECTURE:
-The dashboard follows a functional programming approach with modular design. The data layer integrates real-time APIs with synthetic fallback data. Financial models use NumPy/SciPy for calculations, while Plotly powers interactive visualizations. Streamlit provides the responsive frontend with multi-column layouts.
-
-SAMPLE PORTFOLIO INCLUDES:
-- Maasvlakte 3 (1,070 MW Gas) - Netherlands
-- Scholven B/C (760 MW Gas) - Germany
-- Grain Power (1,275 MW Gas) - UK
-- Nord Stream Wind (385 MW Wind) - Germany
-- Provence Solar (150 MW Solar) - France`,
-  image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop',
-  techStack: ['Python', 'Streamlit', 'Plotly', 'Pandas', 'NumPy', 'SciPy'],
-  category: 'Data Science',
-  codeUrl: 'https://github.com/quantifyrisk-shreya12/Energy-Asset-Valuation-Dashboard',
-  createdDate: 'August 2025',
-  codeSnippets: [
-    {
-      language: 'python',
-      code: `import streamlit as st
-import pandas as pd
-import numpy as np
-from scipy import stats
-
-# DCF Valuation Model
-def calculate_dcf_valuation(cash_flows, discount_rate, terminal_growth):
-    npv = 0
-    for year, cf in enumerate(cash_flows, 1):
-        npv += cf / ((1 + discount_rate) ** year)
-    
-    # Terminal value (Gordon Growth Model)
-    terminal_value = cash_flows[-1] * (1 + terminal_growth) / (discount_rate - terminal_growth)
-    npv += terminal_value / ((1 + discount_rate) ** len(cash_flows))
-    
-    return npv
-
-# Monte Carlo Simulation for Risk Assessment
-def monte_carlo_valuation(base_cf, volatility, iterations=10000):
-    results = []
-    for _ in range(iterations):
-        shocked_cf = base_cf * np.random.normal(1, volatility)
-        npv = calculate_dcf_valuation(shocked_cf, 0.07, 0.02)
-        results.append(npv)
-    
-    return {
-        'mean': np.mean(results),
-        'std': np.std(results),
-        'var_95': np.percentile(results, 5),
-        'var_99': np.percentile(results, 1)
-    }`
-    }
-  ]
-},
-{
   id: 2,
   title: 'Option Pricing - Greek Risk Analyzer',
   description: 'A comprehensive quantitative finance dashboard for option pricing model validation, implementing Black-Scholes and Heston stochastic volatility models with FFT-based pricing, model calibration, and regulatory-compliant validation frameworks.',
@@ -288,6 +204,90 @@ def calibrate_heston(market_prices, strikes, S0, T, r):
     res = minimize(heston_log_likelihood, x0, method='L-BFGS-B', bounds=bounds, 
                    args=(market_prices, strikes, S0, T, r))
     return res.x, res.fun  # Returns [v0, kappa, lambda, sigma_v, rho]`
+    }
+  ]
+},
+  {
+  id: 1,
+  title: 'Energy Asset Valuation Dashboard',
+  description: 'A comprehensive Streamlit dashboard for energy asset strategy and valuation, featuring real-time market analysis, DCF modeling, Monte Carlo simulations, and portfolio optimization for power generation assets.',
+  longDescription: `This project demonstrates end-to-end capabilities for Asset Strategy & Valuation roles in the energy sector. Built as a comprehensive Streamlit dashboard, it provides real-time analysis of European power generation portfolios.
+
+KEY FEATURES:
+
+Real-time Market Analysis
+- Live electricity price monitoring via ENTSO-E Transparency Platform API
+- Gas and carbon price tracking with volatility analysis
+- Spark spread analysis for gas plant economics
+- Price forecasting with trend and seasonal pattern detection
+
+Asset Performance Analytics
+- Portfolio overview with technology mix and capacity analysis
+- Power plant efficiency, availability, and generation metrics
+- Merit order positioning and dispatch economics
+- Cross-asset benchmarking against portfolio and industry standards
+
+Financial Modeling
+- DCF valuation with NPV and IRR calculations
+- Monte Carlo simulation for risk assessment
+- Sensitivity analysis on key parameters
+- LCOE (Levelized Cost of Energy) calculations
+- Aggregated portfolio valuation metrics
+
+Strategic Planning
+- Market scenario analysis (base case, high/low price, green transition)
+- 7-90 day price predictions
+- Portfolio optimization recommendations
+- Hedging strategy and risk management tools
+
+TECHNICAL ARCHITECTURE:
+The dashboard follows a functional programming approach with modular design. The data layer integrates real-time APIs with synthetic fallback data. Financial models use NumPy/SciPy for calculations, while Plotly powers interactive visualizations. Streamlit provides the responsive frontend with multi-column layouts.
+
+SAMPLE PORTFOLIO INCLUDES:
+- Maasvlakte 3 (1,070 MW Gas) - Netherlands
+- Scholven B/C (760 MW Gas) - Germany
+- Grain Power (1,275 MW Gas) - UK
+- Nord Stream Wind (385 MW Wind) - Germany
+- Provence Solar (150 MW Solar) - France`,
+  image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop',
+  techStack: ['Python', 'Streamlit', 'Plotly', 'Pandas', 'NumPy', 'SciPy'],
+  category: 'Data Science',
+  codeUrl: 'https://github.com/quantifyrisk-shreya12/Energy-Asset-Valuation-Dashboard',
+  createdDate: 'August 2025',
+  codeSnippets: [
+    {
+      language: 'python',
+      code: `import streamlit as st
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+# DCF Valuation Model
+def calculate_dcf_valuation(cash_flows, discount_rate, terminal_growth):
+    npv = 0
+    for year, cf in enumerate(cash_flows, 1):
+        npv += cf / ((1 + discount_rate) ** year)
+    
+    # Terminal value (Gordon Growth Model)
+    terminal_value = cash_flows[-1] * (1 + terminal_growth) / (discount_rate - terminal_growth)
+    npv += terminal_value / ((1 + discount_rate) ** len(cash_flows))
+    
+    return npv
+
+# Monte Carlo Simulation for Risk Assessment
+def monte_carlo_valuation(base_cf, volatility, iterations=10000):
+    results = []
+    for _ in range(iterations):
+        shocked_cf = base_cf * np.random.normal(1, volatility)
+        npv = calculate_dcf_valuation(shocked_cf, 0.07, 0.02)
+        results.append(npv)
+    
+    return {
+        'mean': np.mean(results),
+        'std': np.std(results),
+        'var_95': np.percentile(results, 5),
+        'var_99': np.percentile(results, 1)
+    }`
     }
   ]
 },
