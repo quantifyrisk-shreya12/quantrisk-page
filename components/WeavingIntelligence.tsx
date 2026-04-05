@@ -12,7 +12,7 @@ const WeavingIntelligence: React.FC<WeavingIntelligenceProps> = ({ navigateTo })
       <div className="mb-8 flex justify-center">
         <img 
           src="https://picsum.photos/seed/akash/400/400" 
-          alt="Akash - AI/ML Engineer" 
+          alt="Shreya - Financial Analytics & AI Specialist" 
           className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl"
           referrerPolicy="no-referrer"
         />

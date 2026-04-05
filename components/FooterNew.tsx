@@ -23,7 +23,7 @@ const FooterNew = React.forwardRef<HTMLElement, FooterNewProps>(({ navigateTo },
             <div className="flex items-center gap-4 mt-6">
               <a href="#" aria-label="Github" className="text-gray-500 hover:text-indigo-600 transition-colors"><GithubIcon className="w-6 h-6" /></a>
               <a href="#" aria-label="LinkedIn" className="text-gray-500 hover:text-indigo-600 transition-colors"><LinkedinIcon className="w-6 h-6" /></a>
-              <a href="mailto:contact@akash-ai.com" aria-label="Email" className="text-gray-500 hover:text-indigo-600 transition-colors"><EnvelopeIcon className="w-6 h-6" /></a>
+              <a href="mailto:shreya.9253@gmail.com" aria-label="Email" className="text-gray-500 hover:text-indigo-600 transition-colors"><EnvelopeIcon className="w-6 h-6" /></a>
             </div>
           </div>
 

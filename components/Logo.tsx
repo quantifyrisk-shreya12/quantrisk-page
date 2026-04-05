@@ -18,6 +18,6 @@ export const Logo: React.FC<LogoProps> = ({ dark = false, navigateTo }) => (
             </linearGradient>
         </defs>
     </svg>
-    <span className={`text-2xl font-bold ${dark ? 'text-black' : 'text-white'}`}>Akash-AI</span>
+    <span className={`text-2xl font-bold ${dark ? 'text-black' : 'text-white'}`}>Shreya</span>
   </button>
 );
