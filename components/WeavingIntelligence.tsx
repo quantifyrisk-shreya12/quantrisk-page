@@ -19,11 +19,11 @@ const WeavingIntelligence: React.FC<WeavingIntelligenceProps> = ({ navigateTo })
       </div>
       <p className="text-lg text-gray-600 mb-4">Welcome to my portfolio</p>
       <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900">
-        <span className="text-gradient">Architecting AI & Data Solutions</span> <br />
-        for Complex Challenges
+        <span className="text-gradient">From Financial Risk to Generative AI —</span> <br />
+Building Intelligent Systems That Drive Real Impact
       </h1>
       <p className="max-w-3xl mx-auto text-lg text-gray-600 mb-10">
-        Welcome to my portfolio. I'm Shreya Biswas, a data-driven analyst specializing in Agentic AI, Machine Learning, and Cloud Automation. I am passionate about applying advanced statistical modeling, NLP, and end-to-end data pipelines to solve high-impact business challenges. From predictive analytics and intelligent automation to robust risk modeling, I leverage my technical expertise to drive innovation, learn continuously, and grow alongside a forward-thinking team.
+        I'm Shreya Biswas — an AI/ML quantitative analytics consultant with more than 4 years delivering production-grade solutions across financial services, insurance, and energy trading specializing in Agentic AI, Machine Learning, and Cloud Automation. From building fraud detection systems, credit risk PD models at HSBC and Hybrid RAG pipelines at MetLife US, to deploying algorithmic trading systems at RWE and model validation tools at Commerzbank AG — I bridge AI and advanced analytics with real-world business impact. Currently pursuing a second Master's in Quantitative Finance at CAU Kiel, I am passionate about applying advanced statistical modeling, NLP, and end-to-end data pipelines to solve high-impact business challenges. From predictive analytics and intelligent automation to robust risk modeling, I leverage my technical expertise to drive innovation, learn continuously, and grow alongside a forward-thinking team.
       </p>
       <div className="flex justify-center gap-4 mb-24">
         <button 

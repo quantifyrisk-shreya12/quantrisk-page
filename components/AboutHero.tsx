@@ -7,7 +7,7 @@ const AboutHero: React.FC = () => {
         About Me
       </h1>
       <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-        AI/ML Engineer with a knack for building smart, scalable, and full-stack AI systems.
+        Quantitative analyst and AI/ML professional specialising in Financial Crime and Compliance,Fraud Detection, Credit Risk, Insurance Analytics, NLP, and cloud-driven automation across financial services.
       </p>
     </section>
   );

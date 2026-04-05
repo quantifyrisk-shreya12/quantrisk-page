@@ -10,11 +10,11 @@ interface HeaderProps {
 
 const navLinks = [
   { name: 'Home', id: 'home' },
+  { name: 'About Me', id: 'about' },
   { name: 'Projects', id: 'projects' },
   { name: 'Experience', id: 'experience' },
   { name: 'Education', id: 'education' },
   { name: 'Certificates', id: 'certificates' },
-  { name: 'About Me', id: 'about' },
 ];
 
 const Header = React.forwardRef<HTMLElement, HeaderProps>(({ currentPage, navigateTo }, ref) => {

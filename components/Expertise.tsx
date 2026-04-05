@@ -32,7 +32,7 @@ const Expertise: React.FC = () => {
             </h2>
         </div>
         <p className="max-w-2xl mx-auto text-lg text-gray-600 mt-4">
-            Leveraging a robust stack of Machine Learning, NLP, and Cloud technologies to drive innovation in risk management, algorithmic trading, and enterprise automation.
+            Applying production-grade Machine Learning, NLP, and Cloud automation to solve high-stakes problems in financial risk, insurance analytics, and intelligent enterprise systems.
         </p>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

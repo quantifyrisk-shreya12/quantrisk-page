@@ -23,21 +23,21 @@ const WhoIAm: React.FC = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Who I Am</h2>
         <div className="text-lg text-gray-600 space-y-4">
             <p>
-                I'm a <strong className="text-gray-800">Data Scientist and ML Engineer</strong> based in Berlin with over 5 years of experience building <strong className="text-gray-800">scalable machine learning pipelines</strong> and applying <strong className="text-gray-800">statistical models</strong> to solve real-world problems. Over the past year, I've also explored <strong className="text-gray-800">LLMs</strong> and <strong className="text-gray-800">RAG architectures</strong>, blending classic data science with cutting-edge AI.
+                 I'm <strong className="text-gray-800">Shreya Biswas</strong>, a quantitative analyst and AI/ML professional based in <strong className="text-gray-800">Kiel, Germany</strong>, with 4+ years of hands-on experience delivering intelligent data solutions across <strong className="text-gray-800">financial services, insurance, and energy trading</strong>.
             </p>
             <p>
-                My sweet spot is transforming <strong className="text-gray-800">complex data</strong> into practical, intelligent systems. I work across the stack—<strong className="text-gray-800">data ingestion, modeling, evaluation, and deployment</strong>—using tools like <strong className="text-gray-800">PyTorch, Python, Scikit-learn, and Hugging Face</strong> to create solutions that are both <strong className="text-gray-800">accurate and efficient</strong>.
+                My core strength lies in building end-to-end analytical systems — from <strong className="text-gray-800"> fraud detection, credit default PD models</strong> (XGBoost, 80%+ recall) and <strong className="text-gray-800">Hybrid RAG pipelines</strong> that boosted semantic recall by 34%, to <strong className="text-gray-800">event-driven algorithmic trading systems</strong> on Azure and <strong className="text-gray-800">Python-based model screening tools</strong> for regulatory compliance at Commerzbank AG. I am passionate about applying advanced statistical modeling, NLP, and end-to-end data pipelines to solve high-impact business challenges. From predictive analytics and intelligent automation to robust financial risk management.
             </p>
             <p>
-                I thrive on bridging <strong className="text-gray-800">ML, statistics, and AI</strong>, whether it's <strong className="text-gray-800">forecasting trends, classifying data,</strong> or fine-tuning models for <strong className="text-gray-800">retrieval and generation</strong> tasks. I'm passionate about turning <strong className="text-gray-800">raw data into actionable insights and intelligent applications</strong>.
+                 I work at the intersection of <strong className="text-gray-800">quantitative finance and applied AI</strong> — leveraging Agentic AI, Gen AI, machine learning, NLP, and cloud automation (Azure, GCP) to solve high-stakes problems in <strong className="text-gray-800">Financial Crime and Compliance, Fraud Detection, Credit Risk, Insurance Analytics, and Intelligent Automation</strong>. Currently pursuing an <strong className="text-gray-800">M.Sc. in Quantitative Finance at CAU Kiel</strong>, I am actively seeking roles where advanced analytics and AI drive real financial decision-making.
             </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-12">
-            <StatCard icon={<CodeIcon className="w-6 h-6" />} value="5+" label="Years of Experience" />
-            <StatCard icon={<LLMStatIcon className="w-6 h-6" />} value="1.5+" label="Years with LLMs" />
-            <StatCard icon={<BookIcon className="w-6 h-6" />} value="20+" label="Key Projects" />
-            <StatCard icon={<GraduationCapIcon className="w-6 h-6" />} value="M.Sc." label="Data Science" />
+            <StatCard icon={<CodeIcon className="w-6 h-6" />} value="4+" label="Years of Experience" />
+            <StatCard icon={<LLMStatIcon className="w-6 h-6" />} value="4" label="Companies Across 2 Countries" />
+            <StatCard icon={<BookIcon className="w-6 h-6" />} value="2" label="Master's Degrees" />
+            <StatCard icon={<GraduationCapIcon className="w-6 h-6" />} value="M.Sc." label="Quantitative Finance (Current)" />
         </div>
         
         <div className="w-full max-w-2xl mx-auto">

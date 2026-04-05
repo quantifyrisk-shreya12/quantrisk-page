@@ -22,7 +22,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ navigateTo }) => {
             </h2>
         </div>
         <p className="max-w-2xl mx-auto text-lg text-gray-600 mt-4">
-          Exploring the boundaries of AI and machine learning through hands-on application and innovative solutions.
+          Real-world AI and data science projects spanning credit risk modelling, generative AI, NLP pipelines, algorithmic trading, and quantitative financial analytics.
         </p>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">

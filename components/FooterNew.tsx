@@ -18,7 +18,7 @@ const FooterNew = React.forwardRef<HTMLElement, FooterNewProps>(({ navigateTo },
           <div className="lg:col-span-1">
             <Logo dark navigateTo={navigateTo} />
             <p className="mt-4 text-gray-500 max-w-xs">
-             Exploring the intersection of AI, Machine Learning, and practical applications to solve real-world problems.
+             Bridging quantitative finance, AI automation, and data science to build intelligent solutions for financial services and insurance analytics.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a href="#" aria-label="Github" className="text-gray-500 hover:text-indigo-600 transition-colors"><GithubIcon className="w-6 h-6" /></a>
@@ -35,8 +35,9 @@ const FooterNew = React.forwardRef<HTMLElement, FooterNewProps>(({ navigateTo },
                 <li><button onClick={() => navigateTo('home')} className="hover:text-indigo-600 transition-colors">Home</button></li>
                 <li><button onClick={() => navigateTo('about')} className="hover:text-indigo-600 transition-colors">About Me</button></li>
                 <li><button onClick={() => navigateTo('projects')} className="hover:text-indigo-600 transition-colors">Projects</button></li>
-                <li><button onClick={() => navigateTo('knowledge')} className="hover:text-indigo-600 transition-colors">Knowledge Hub</button></li>
-                <li><button onClick={() => navigateTo('contact')} className="hover:text-indigo-600 transition-colors">Contact</button></li>
+                <li><button onClick={() => navigateTo('experience')} className="hover:text-indigo-600 transition-colors">Experience</button></li>
+                <li><button onClick={() => navigateTo('education')} className="hover:text-indigo-600 transition-colors">Education</button></li>
+                <li><button onClick={() => navigateTo('certificates')} className="hover:text-indigo-600 transition-colors">Certificates</button></li>
               </ul>
             </div>
             {/* Stay Updated Column */}
